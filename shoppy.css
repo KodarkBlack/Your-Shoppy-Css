@@ -306,11 +306,12 @@
 
 .Later-Container {
     width: 80%;
-    height: 300px;
+    height: 380px;
     margin-left: 10%;
     margin-top: 5%;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     padding: 5px ;
+    margin-bottom: 5%;
 }
 
 .Later-Container h3 {
@@ -324,12 +325,80 @@
 }
 
 .Tab {
-    width: 20%;
-    object-fit: fill;
-    height: 200px;
+    width: 14%;
+    height: 157px;
+    
 }
 
 .Tab img {
-    object-fit: fill;
+    object-fit: cover;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
+.Apple {
+    width: 15%;
+    height: 155px;
+}
+
+.Apple img {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.Wrist-Watch {
+    width: 15%;
+    height: 155px;
+}
+
+.Wrist-Watch img {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.Laptop {
+    width: 15%;
+    height: 155px;
+}
+
+.Laptop img {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+/* THE FOOTER PART (FIRST) */
+
+.Footer-one {
+    width: screen;
+    height: 130px;
+    background-color: #000000;
+    display: flex;
+    -webkit-text-fill-color: #FFFFFF;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 0.1%;
+}
+
+.REFERRAL {
+    display: flex;
+}
+
+.Footer-Two {
+    width: screen;
+    height: 300px;
+    background-color: #000000;
+    display: flex;
+    -webkit-text-fill-color: #FFFFFF;
+    justify-content: space-evenly;
+    margin-bottom: 0.1%;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.Footer-Three {
+    width: screen;
+    height: 120px;
+    background-color: #000000;
+    -webkit-text-fill-color: #FFFFFF;
+    justify-content: space-between;
+    display: flex;
+}
