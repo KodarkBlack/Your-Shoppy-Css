@@ -246,6 +246,8 @@
 
 /* BEST SELLING FOR WOMEN ENDS */
 
+
+/* MODAL STARTS */
 .modal {
     margin-left: 10%;
     width: 80%;
@@ -255,5 +257,79 @@
     justify-content: space-between;
     padding: 5px;
     border-radius: 10px;
+}
+/* MODAL ENDS */
+
+
+/* FEATURED START */
+
+.Featured {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.New-Arrivals{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Speaker {
+    width: 15%;
+    height: 150px;
+    background-color: #000000;
+}
+
+.Gucci {
+    width: 15%;
+    height: 150px;
+    background-color: #000000;
+}
+
+.Playstation-Five {
+    width: 45%;
+    height: 500px;
+    background: url(/assets/playstation.svg), black 50% / cover no-repeat;
+}
+
+.Women-Collection {
+    width: 50%;
+    height: 250px;
+    background: url(/assets/attractivewoman.svg);
+}
+
+.Speaker-Gucci {
+    display: flex;
+}
+
+
+/* SAVED FOR LATER START */
+
+.Later-Container {
+    width: 80%;
+    height: 300px;
+    margin-left: 10%;
+    margin-top: 5%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 5px ;
+}
+
+.Later-Container h3 {
+    font-size: larger;
+    margin-left: 5%;
+}
+
+.Gadget-Set {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Tab {
+    width: 20%;
+    object-fit: fill;
+    height: 200px;
+}
+
+.Tab img {
+    object-fit: fill;
 }
 
