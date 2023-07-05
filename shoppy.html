@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Shoppy | | CSS</title>
     <link rel="stylesheet" href="shoppy.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 </head>
 <!-- HEAD -->
 
@@ -43,49 +44,68 @@
         </div>
     </div>
 
-    <!-- THE 10% VOUCHER PART -->
 
+
+    <!-- THE 10% VOUCHER PART -->
     <div class="Voucher-Container">
 
         <!-- THE PHONE CARD -->
-        <div class="Phone-Card"></div>
+        <div class="Phone-Card">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="Voucher">
+                    <div class="applelogo">
+                        <img src="/assets/applelogo.svg" alt="">
+                        <p>Iphone 14 Series</p>
+                    </div>
+                    <h1>Up to 10% off Voucher</h1>
+                    <button>Shop Now</button>
+                  </div>
+                  <img class="Double-Iphone" src="/assets/doubleiphone.svg" alt="">
+                </div>
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+              
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
     </div>
 
-    <!-- THE LOGO CAUR0USEL -->
-    <div class="Logo-Container">
-        <div class="Logo-Card">
-            <h3>LOGO</h3>
-        </div>
 
-        <div class="Logo-Card">
-            <h3>LOGO</h3>
-        </div>
 
-        <div class="Logo-Card">
-            <h3>LOGO</h3>
-        </div>
+    <!-- THE LOGO CAR0USEL -->
+    <div class="Logo-Container swiper">
+        <div class="swiper-wrapper-logo">
 
-        <div class="Logo-Card">
-            <h3>LOGO</h3>
-        </div>
+            <img class="Logo-Card" src="/assets/startup.png" alt=""> 
+            <img class="Logo-Card" src="/assets/rapido.png" alt="">
+            <img class="Logo-Card" src="/assets/pore.png" alt="">   
+            <img class="Logo-Card" src="/assets/startup.png" alt=""> 
+            <img class="Logo-Card" src="/assets/rapido.png" alt="">
+            <img class="Logo-Card" src="/assets/pore.png" alt="">   
+            <img class="Logo-Card" src="/assets/startup.png" alt=""> 
+            <img class="Logo-Card" src="/assets/rapido.png" alt="">
+            <img class="Logo-Card" src="/assets/pore.png" alt="">   
+            <img class="Logo-Card" src="/assets/startup.png" alt=""> 
+            <img class="Logo-Card" src="/assets/rapido.png" alt="">
+            <img class="Logo-Card" src="/assets/pore.png" alt="">   
+            <img class="Logo-Card" src="/assets/startup.png" alt=""> 
+            <img class="Logo-Card" src="/assets/rapido.png" alt="">
+            <img class="Logo-Card" src="/assets/pore.png" alt="">   
+            <img class="Logo-Card" src="/assets/startup.png" alt=""> 
+            <img class="Logo-Card" src="/assets/rapido.png" alt="">
+            <img class="Logo-Card" src="/assets/pore.png" alt="">   
+            
 
-        <div class="Logo-Card">
-            <h3>LOGO</h3>
-        </div>
-        <div class="Logo-Card">
-            <h3>LOGO</h3>
-        </div>
+        
 
-        <div class="Logo-Card">
-            <h3>LOGO</h3>
-        </div>
-
-        <div class="Logo-Card">
-            <h3>LOGO</h3>
-        </div>
-
-        <div class="Logo-Card">
-            <h3>LOGO</h3>
         </div>
     </div>
 
@@ -99,18 +119,22 @@
 
         <div class="Cloth-Card">
             <div class="Cards-one">
+                <img class="Card-Text-Third" src="/assets/third.svg" alt="">
                 <h3 class="Card-Text">Near By Fashion</h3>
             </div>
             <div class="Cards-Two">
+                <img class="Card-Text-Fourth" src="/assets/fourth.svg" alt="">
                 <h3 class="Card-Text" >Near by Electronics</h3>
             </div>
         </div>
 
         <div class="Cloth-Card-Two">
             <div class="Cards-Two">
+                <img class="Card-Text-Second" src="/assets/second.svg" alt="">
                 <h3 class="Card-Text" >Near By All Shops</h3>
             </div>
             <div class="Cards-one">
+                <img class="Card-Text-First" src="/assets/first.svg" alt="">
                 <h3 class="Card-Text" >Near By Furniture</h3>
             </div>
         </div>
@@ -125,9 +149,9 @@
             <button>See more</button>
         </div>
 
-        <div class="Women-Card"></div>
-        <div class="Women-Card"></div>
-        <div class="Women-Card"></div>
+        <img class="Women-Card" src="/assets/blackgirl.svg" alt="">
+        <img class="Women-Card" src="/assets/whitegirl.svg" alt="">
+        <img class="Women-Card" src="/assets/Trouser.svg" alt="">
     </div>
 
 
@@ -139,9 +163,14 @@
         </div>
         <button>Shop Now</button>
     </div>
+
+
+
+    
  
 
     <!-- SCRIPTS -->
     <script src="/shoppy.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>
 </html>

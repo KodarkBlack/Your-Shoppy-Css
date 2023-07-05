@@ -82,18 +82,42 @@
 /* THE 10% VOUCHER PART */
 
 .Voucher-Container {
-    width: 80%;
-    height: 450px;
-    background-color: #FFFFFF;
+    width: 70%;
+    height: 300px;
+    background-color: #000000;
     padding: 5%;
     justify-content: center;
+    margin-left: 12%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+}
+.applelogo {
+    display: flex;
+    -webkit-text-fill-color: #FFFFFF;
+}
+
+.Voucher {
+    -webkit-text-fill-color: #FFFFFF;
+}
+
+.swiper-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Double-Iphone {
+    height: 350px;
 }
 
 .Phone-Card {
-    width: 80%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.swiper {
+    width: 100%;
     height: 400px;
-    background-color: #000000;
-    margin-left: 10%;
 }
 
 /* THE 10% VOUCHER ENDS */
@@ -104,11 +128,12 @@
 /* THE LOGO CAROUSEL STARTS */
 .Logo-Container {
     width: screen;
-    height: 50px;
-    background-color: #000000;
-    padding: 3%;
+    height: 75px;
     display: flex;
-    justify-content: space-evenly;
+    margin-top: 5%;
+    justify-content: center;
+    overflow: hidden;
+    
 }
 
 .Logo-Card {
@@ -116,6 +141,22 @@
     height: 50px;
     background-color: #FFFFFF;
     text-align: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    flex: 0 0 10%;
+    object-fit: contain;
+}
+
+.swiper-wrapper-logo {
+    display: flex;
+    animation: slide 10s linear infinite;
+    gap: 5%;
+    align-items: center;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
 }
 /* THE LOGO CAROUSEL ENDS */
 
@@ -134,14 +175,12 @@
     width: 20%;
     height: 300px;
     border: 20px;
-    background-color: #000000;
 }
 
 .Cards-Two {
     width: 70%;
     height: 300px;
     border: 20px;
-    background-color: #000000;
 }
 
 .Cloth-Card {
@@ -163,6 +202,30 @@
     color: #FFFFFF;
 }
 
+.Card-Text-First {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.Card-Text-Second {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.Card-Text-Third {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.Card-Text-Fourth {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
 
 /* BEST SELLING FOR WOMEN START */
 
@@ -177,8 +240,8 @@
 .Women-Card {
     width: 20%;
     height: 300px;
-    background-color: #000000;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 /* BEST SELLING FOR WOMEN ENDS */
