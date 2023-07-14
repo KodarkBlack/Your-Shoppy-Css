@@ -50,11 +50,24 @@
     margin-left: 10%;
 }
 
+.Shoppy-Nav h3 {
+    color: var(--color-2, #1E1E1E);
+    font-family: Quella;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 .Search {
     width: 50%;
-    height: 40px;
-    border-radius: 20px;
-    margin: 5px ;
+    height: 30px;
+    border-radius: 5px;
+    margin: 3% ;
+    padding: 7px 17px 7px 20px;
+    justify-content: center;
+    align-items: center;
+    background: var(--secondary, #F5F5F5);
 }
 
 .Your-Shoppy-Btn {
@@ -75,6 +88,14 @@
     display: flex;
     justify-content: space-between;
     margin-left: 10%;
+}
+
+.Exclusive-Nav h3 {
+    display: flex;
+    width: 118px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
 }
 
 .Exclusive-Nav ul {
@@ -108,13 +129,47 @@
     -webkit-text-fill-color: #FFFFFF;
 }
 
+.applelogo p {
+    color: var(--text, #FAFAFA);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 22.233px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33.349px; /* 150% */
+    width: 175.081px;
+    height: 27.791px;
+}
+
 .Voucher {
     -webkit-text-fill-color: #FFFFFF;
+}
+
+.Voucher h1 {
+    color: var(--text, #FAFAFA);
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500; /* 125% */
+    letter-spacing: 2px;
+    width: 408px;
 }
 
 .swiper-wrapper {
     display: flex;
     justify-content: space-between;
+}
+
+.swiper-btn {
+    color: var(--text, #FAFAFA);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 22.233px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33.349px; /* 150% */
+    background: #000000;
+    border: none;
 }
 
 .Double-Iphone {
@@ -180,6 +235,25 @@
     margin: 5%;
     width: 80%;
     margin-left: 10%;
+}
+
+.Explore h3 {
+    color: var(--color-2, #1E1E1E);
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.Explore p {
+    color: #5AC0C0;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 7%;
 }
 
 .Cards-one {
@@ -260,6 +334,40 @@
 
 }
 
+.best-selling h3 {
+    color: var(--color-2, #1E1E1E);
+    font-family: Poppins;
+    font-size: 31.667px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.best-selling p {
+    color: var(--color-4, rgba(30, 30, 30, 0.50));
+    font-family: Poppins;
+    font-size: 17.813px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.best-selling-btn {
+    border-radius: 7.917px;
+    background: #C1DCDC;
+    display: flex;
+    padding: 11.875px 23.75px;
+    align-items: center;
+    gap: 9.896px;
+    border: none;
+    color: var(--color-2, #1E1E1E);
+    font-family: Poppins;
+    font-size: 17.813px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
 /* BEST SELLING FOR WOMEN ENDS */
 
 
@@ -273,6 +381,7 @@
     justify-content: space-evenly;
     gap: 40%;
     border-radius: 10px;
+    display: inline-flex;
 }
 
 .modal-btn {
@@ -288,6 +397,7 @@
     justify-content: center;
     align-items: center;   
     border-radius: 10px;
+    border: none;
 }
 
 
@@ -560,5 +670,90 @@
 .copyright {
     display: flex;
 }
+
+
+
+/* ---------------------------     THE MOBILE FIX ----------------------------- */
+
+@media screen and (max-width: 580px) {
+    /* Styles to be applied for screens with a minimum width of 580px */
+
+    .Double-Iphone {
+      display: none;
+    }
+
+    .applelogo {
+      background-image: url(/assets/doubleiphone.svg);
+    }
+
+
+
+  
+    .REFERRAL {
+      display: block;
+    }
+  
+    .Footer-Two {
+      display: block;
+      height: inherit;
+    }
+  
+    .Footer-Three {
+      display: block;
+    }
+  
+    .copyright {
+      display: block;
+    }
+
+    .Gadget-Set {
+        display: block;
+    }
+
+    .Cloth-Card {
+        display: block;
+    }
+
+    .Cards-one {
+      width: 100%;
+      margin-bottom: 5%;
+      
+    }
+
+    .Cloth-Card-Two {
+        display: block;
+    }
+
+    .Cards-Two {
+      width: 100%;
+      margin-bottom: 5%;
+      position: relative;
+    }
+
+
+
+    .Later-Container {
+        height: inherit;
+        width: 80%;
+    }
+
+    .Women-Page {
+        display: block;
+    }
+
+    .Women-Card-Place {
+      display: block;
+      width: 100%;
+    }
+
+    .Become-Seller {
+        display: none;
+    }
+
+    .swiper-wrapper-logo {
+      display: none;
+    }
+}
+  
 
 
