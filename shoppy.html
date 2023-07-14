@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Shoppy | | CSS</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="shoppy.css">
+    <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 </head>
 <!-- HEAD -->
@@ -27,18 +29,21 @@
     <!-- Exclusive Nav -->
     <div class="Exclusive-Nav">
         <h3>Exclusive</h3>
-        <ul>
-            <li>Home</li>
-            <li>Contact</li>
-            <li>About</li>
-            <li>Sign Up</li>
-        </ul>
+        <div class="menu-toggle">
+            <span class="bx bx-menu"></span>
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>About</li>
+                <li>Sign Up</li>
+            </ul>
+        </div>
 
         <div class="Become-Seller">
             <p>Become Seller</p>
             <ul>
                 <img src="/assets/Wishlist.svg" alt="">
-               <img src="/assets/Cart1.svg" alt="">
+                <img src="/assets/Cart1.svg" alt="">
                 <img src="/assets/user (2).svg" alt="">
             </ul>
         </div>
@@ -145,19 +150,21 @@
             <button>See more</button>
         </div>
 
-        <img class="Women-Card" src="/assets/blackgirl.svg" alt="">
-        <img class="Women-Card" src="/assets/whitegirl.svg" alt="">
-        <img class="Women-Card" src="/assets/Trouser.svg" alt="">
+        <div class="Women-Card-Place">
+            <img class="Women-Card" src="/assets/blackgirl.svg" alt="">
+            <img class="Women-Card" src="/assets/whitegirl.svg" alt="">
+            <img class="Women-Card" src="/assets/Trouser.svg" alt="">
+        </div>
     </div>
 
 
     <!-- THE MODAL -->
     <div class="modal">
-        <div>
+        <div class="modal-content">
             <h4>Super discount on more than 100k Rs</h4>
             <p>Have you finally just write dummy info</p>
         </div>
-        <button>Shop Now</button>
+        <button class="modal-btn">Shop Now</button>
     </div>
 
 
@@ -165,14 +172,24 @@
     <!-- FEATURED -->
 
     <div class="Featured">
-        <Button>Featured</Button>
-        <h3>New Arrivals</h3>
+        <Button class="Featured-btn">Featured</Button>
+        <h3 class="Featured-Arrival">New Arrivals</h3>
 
         <div class="New-Arrivals">
-            <div class="Playstation-Five"></div>
+            <div>
+                <div class="Playstation-Five"></div>
+            </div>
 
-            <div class="Women-Collection"></div>
+            <div>
+                <div class="Women-Collection"></div>
+    
+                <div class="Collection">
+                    <div class="Women-Collection-two"></div>
+                    <div class="Women-Collection-two"></div>
+                </div>
+            </div>
         </div>
+        
     </div>
 
 
@@ -182,14 +199,18 @@
     <div class="Later-Container">
         <h3>Saved for later</h3>
         <div class="Gadget-Set">
-            <div class="Tab">
-                <img src="/assets/tablet.svg" alt="">
-                <p>$99.50</p>
-                <p>GoPro HERO6 4k Action <br> Camera -Black </p>
-                <button>Move to cart</button>
+
+
+            <div >
+                <div>
+                    <img src="/assets/tablet.svg" alt="">
+                    <p>$99.50</p>
+                    <p>GoPro HERO6 4k Action <br> Camera -Black </p>
+                    <button>Move to cart</button>
+                </div>
             </div>
 
-            <div class="Apple">
+            <div>
                 <div>
                     <img src="/assets/Apple.svg" alt="">
                     <p>$99.50</p>
@@ -199,7 +220,7 @@
                 
             </div>
 
-            <div class="Wrist-Watch">
+            <div>
                 <div>
                     <img src="/assets/wristwatch.svg" alt="">
                     <p>$99.50</p>
@@ -209,7 +230,7 @@
                 
             </div>
 
-            <div class="Laptop">
+            <div>
                 <div>
                     <img src="/assets/laptop.svg" alt="">
                     <p>$99.50</p>
@@ -227,7 +248,7 @@
     <footer class="Footer-one">
         <div class="REFERRAL">
             <img src="/assets/Vector (5).svg" alt="...">
-            <div>
+            <div class="Referral-Input">
                 <h3>TS REFERRAL PROGRAM</h3>
                 <P>Refer a friend: Give §250, get §250 <br>Find out more </P>
             </div>
@@ -235,7 +256,7 @@
 
         <div class="REFERRAL">
             <img src="/assets/Vector (6).svg" alt="...">
-            <div>
+            <div class="Referral-Input">
                 <h3>TS REFERRAL PROGRAM</h3>
                 <P>Refer a friend: Give §250, get §250 <br>Find out more </P>
             </div>
@@ -243,7 +264,7 @@
     </footer>
 
     <footer class="Footer-Two">
-        <ul>
+        <ul class="The-Footer-Two-Li">
             <h3>ONLINE SHOPPING</h3>
             <li>Menu</li>
             <li>Women</li>
@@ -253,7 +274,7 @@
             <li>Furnitures</li>
         </ul>
 
-        <ul>
+        <ul class="The-Footer-Two-Li">
             <h3>NEAR BY SHOPS</h3>
             <li>Near By Fashion</li>
             <li>Near By Jewellery</li>
@@ -262,7 +283,7 @@
             <li>Near By All Shops</li>
         </ul>
 
-        <ul>
+        <ul class="The-Footer-Two-Li"> 
             <h3>HELP AND INFO</h3>
             <li>Track An Order</li>
             <li>Contact Us</li>
@@ -273,23 +294,23 @@
             <li>Terms And Condition</li>
         </ul>
 
-        <ul>
+        <ul class="The-Footer-Two-Li">
             <h3>TraiLShoppy for business</h3>
             <li>Become A Seller</li>
             <li>How To Sell</li>
             <li>Business Support</li>
         </ul>
 
-        <div>
+        <ul class="email-such">
             <h3>EMAIL</h3>
             <p>ibukunolufisayo8888@gmail.com</p>
             <h3>SOCIAL LINKS</h3>
-            <div>
+            <li>
                 <img src="/assets/Icon-Facebook.svg" alt="...">
                 <img src="/assets/Icon-Twitter.svg" alt="...">
                 <img src="/assets/icon-instagram.svg" alt="...">
                 <img src="/assets/Icon-Linkedin.svg" alt="...">
-            </div>
+            </li>
             <h3>Download App</h3>
             <div class="AppGoogle">
                 <img src="/assets/Qr Code.svg" alt="...">
@@ -298,7 +319,7 @@
                     <img src="/assets/GooglePlay.svg" alt="...">
                 </div>
             </div>
-        </div>
+        </ul>
     </footer>
 
     <footer class="Footer-Three">
@@ -312,9 +333,8 @@
             </div>
         </div>
 
-        <div class="copyright">
-            <img src="/assets/icon-copyright.svg" alt="...">
-            <p>2023 WWW.TrailShoppy.com. All right reserved</p>
+        <div class="copyright"> 
+            <p> &copy; 2023 WWW.TrailShoppy.com. All right reserved</p>
         </div>
     </footer>
 
