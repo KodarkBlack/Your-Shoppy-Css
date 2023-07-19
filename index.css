@@ -362,7 +362,21 @@
     display: inline-flex;
     gap: 2%;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: center;
+    min-width: 75%;
+}
 
+.New-Arrival {
+    width: 100%;
+    display: inline-flex;
+    gap: 2%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: center;
+    min-width: 75%;
 }
 
 .best-selling h3 {
@@ -489,7 +503,7 @@
 
 
 .New-Arrivals{
-    display: flex;
+    display: block;
 }
 
 .Speaker {
@@ -523,9 +537,10 @@
 }
 
 .Collection {
-    display: flex;
+    display: grid;
     justify-content: space-between;
     margin-top: 5%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .Speaker-Gucci {
@@ -570,12 +585,13 @@
     display: flex;
     margin-left: 5%;
     justify-content: space-evenly;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    align-items: center;
+    column-gap: 20px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
 }
 
-.Tab {
-    /* height: 150px; */
-}
 
 .Tab img {
     object-fit: cover;
@@ -757,152 +773,165 @@
 @media screen and (max-width: 580px) {
     /* Styles to be applied for screens with a minimum width of 580px */
 
-    .Double-Iphone {
+.Double-Iphone {
       display: none;
-    }
+}
 
-    /* .applelogo {
-      background-image: url(/assets/doubleiphone.svg);
-    } */
-
-
-
-  
-    .REFERRAL {
-      display: block;
-    }
-  
-    .Footer-Two {
-      display: block;
-      height: inherit;
-      margin-top: -5%;
-    }
-  
-    .Footer-Three {
-      display: block;
-      margin-top: -5%;
-    }
-  
-    .copyright {
-      display: block;
-    }
-
-    .Gadget-Set {
-        display: grid;
-        justify-content: center;
-        column-gap: 5%;
-    }
-
-    .Cloth-Card {
-        display: block;
-    }
-
-    .Card-Text-Third {
-        width: 80%;
-    }
-
-    .Card-Text-Fourth {
-        width: 80%;
-    }
-
-    .Card-Text-Second {
-        width: 80%;
-    }
-
-    .Card-Text-First {
-        width: 80%;
-    }
-
-    .Cards-one-furniture {
-        margin-left: -1%;
-    }
-
-    .Cards-one {
-      width: 100%;
-      margin-bottom: 5%;
-    }
-
-    .Cloth-Card-Two {
-        display: block;
-    }
-
-    .Cards-Two {
-      width: 100%;
-      margin-bottom: 5%;
-    }
+/* .applelogo {
+    background-image: url(/assets/doubleiphone.svg);
+} */
 
 
+/* .Ads-nav {
+   display: none;
+} */
 
-    .Later-Container {
-        height: inherit;
-        width: 80%;
-    }
 
-    .Women-Page {
-        display: block;
-    }
+.REFERRAL {
+    display: block;
+}
 
-    .Women-Card-Place {
-      display: block;
-      width: 100%;
-    }
+.Footer-Two {
+    display: block;
+    height: inherit;
+    margin-top: -5%;
+}
 
-    .Become-Seller {
-        display: none;
-    }
+.Footer-Three {
+    display: block;
+    margin-top: -5%;
+}
 
-    .swiper-wrapper-logo {
-        display: flex;
-        animation: slide 10s linear infinite;
-        gap: 5%;
-        align-items: center;
-    }
+.copyright {
+    display: block;
+}
 
-    .Voucher {
-        background-color: url(/assets/doubleiphone.svg);
-        
-    }
+.Gadget-Set {
+    display: grid;
+    justify-content: center;
+    column-gap: 5%;
+}
 
-    .Tab {
+.Cloth-Card {
+    display: block;
+}
+
+.Card-Text-Third {
+    width: 80%;
+}
+
+.Card-Text-Fourth {
+    width: 80%;
+}
+
+.Card-Text-Second {
+    width: 80%;
+}
+
+.Card-Text-First {
+    width: 80%;
+}
+
+.Cards-one-furniture {
+    margin-left: -1%;
+}
+
+.Cards-one {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.Cloth-Card-Two {
+    display: block;
+}
+
+.Cards-Two {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+
+
+.Later-Container {
+    height: inherit;
+    width: 80%;
+}
+
+.Women-Page {
+    display: block;
+}
+
+.Women-Card-Place {
+    /* display: block; */
+    width: 100%;
+}
+
+.Become-Seller {
+    display: none;
+}
+
+.swiper-wrapper-logo {
+    display: flex;
+    animation: slide 10s linear infinite;
+    gap: 5%;
+    align-items: center;
+}
+
+.Voucher {
+    background-color: url(/assets/doubleiphone.svg);
+    
+}
+
+.Tab {
+    margin: 10%;
+}
+
+.Voucher h1 {
+    color: var(--text, #FAFAFA);
+    font-family: Inter;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 200;
+    letter-spacing: 2px;
+    width: 200px;
+}
+
+.Apple {
         margin: 10%;
-    }
+}
 
-    .Apple {
+.Wrist-Watch {
         margin: 10%;
-    }
+}
 
-    .Wrist-Watch {
-        margin: 10%;
-    }
+.Laptop {
+    margin: 10%;
+}
 
-    .Laptop {
-        margin: 10%;
-    }
+.best-selling {
+    margin: 5%;
+}
 
-    .best-selling {
-        margin: 5%;
-    }
+.modal-btn {
+    margin-top: 10%;
+}
 
-    .modal-btn {
-        margin-top: 10%;
-    }
-
-    .copyright {
+.copyright {
         text-align:center;
-    }
+}
 
-    .the-logo img {
+.the-logo img {
         /* text-align: center; */
         margin-left: 10%;
         justify-content: space-evenly;
-    }
-
-    .Search {
-        width: 50%;
-        margin: 7%;
-    }
 }
 
-  
+.Search {
+        width: 50%;
+        margin: 7%;
+}
+
+
+}
 
 
